@@ -33,8 +33,7 @@ function App() {
 
   return (
     <div className="w-screen h-screen bg-[#070707]">
-      <div className="h-[8%] border-b border-white" />
-      <div className="h-[92%] flex">
+      <div className="h-[100%] flex">
         <div className="w-[350px] min-w-fit border-r border-white py-10 px-3">
           {sideBarList.map(({ title, path, matchPaths }) => (
             <div

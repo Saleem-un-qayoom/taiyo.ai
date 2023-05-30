@@ -40,7 +40,11 @@ function ContactScreen() {
                   {firstName + lastName}
                 </div>
                 {contactItemButtons.map(({ title, onClick }) => (
-                  <Button onClick={() => onClick(id)} className="mb-3">
+                  <Button
+                    onClick={() => onClick(id)}
+                    className="mb-3"
+                    key={title}
+                  >
                     {title}
                   </Button>
                 ))}
